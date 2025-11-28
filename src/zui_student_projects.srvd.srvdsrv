@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service for Student Projects.'
+define service ZUI_STUDENT_PROJECTS {
+  expose ZO_STUDENT_PROJECTS;
+}

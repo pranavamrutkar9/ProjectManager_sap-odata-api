@@ -1,0 +1,9 @@
+projection;
+// strict ( 2 );
+
+define behavior for ZO_STUDENT_PROJECTS alias Project
+{
+  use create;
+  use update;
+  use delete;
+}

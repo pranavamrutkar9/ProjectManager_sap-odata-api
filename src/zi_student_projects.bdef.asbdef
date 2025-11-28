@@ -1,0 +1,24 @@
+managed implementation in class zbp_i_student_projects unique;
+strict ( 2 );
+
+define behavior for ZI_STUDENT_PROJECTS alias Project
+persistent table zprojects
+lock master
+authorization master ( instance )
+{
+  create;
+  update;
+  delete;
+
+  field ( numbering : managed, readonly ) ProjectID;
+
+  mapping for zprojects
+  {
+    ProjectID = proj_id;
+    Title = title;
+    Leader = team_lead;
+    Technology = technology;
+    Status = status;
+    DueDate = due_date;
+    }
+}
